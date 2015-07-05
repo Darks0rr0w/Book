@@ -21,32 +21,36 @@ class Entry extends DataBase
 
     public function save()
     {
-
-        $sql = "INSERT INTO entry (content,date,status) VALUES (".$this->content.","
-                                                                .$this->date.","
-                                                                .$this->status.")";
+        $this->content = mysql_real_escape_string($this->content);
+        $sql = "INSERT INTO entry (content,date,status) VALUES (':content', ':date', ':status')";
         $q = $this->dbh->prepare($sql);
-       /* $q->execute([":{$this->content}" => $this->content,
-                     ":{$this->date}" => $this->date,
-                     ":{$this->status}" => $this->status]);*/
+        $q->bindParam(':content', $this->content );
+        $q->bindParam(':date', $this->date);
+        $q->bindParam(':status', $this->status);
         $q->execute();
     }
 
-    /*public function insert($values)
-    {
-        $sql = "INSERT INTO entry (content, date) VALUES (:{$values[0]},:{$values[1]})";
-        $q = $this->dbh->prepare($sql);
-        $q->execute([":{$values[0]}" => $values[0],
-                     ":{$values[1]}" => $values[1]]);
-    }*/
 
     public  function find($id)
     {
-        //   TODO
-        $sql = "SELECT * FROM entry WHERE id =".$id;
+        $sql = "SELECT * FROM entry WHERE id = ':id'";
+        $q = $this->dbh->prepare($sql);
+        $q->bindParam(':id', $id);
+        $q->execute();
+
+        $result = $q->fetch();
+        return $result;
+    }
+
+    public function findAll()
+    {
+        $sql = "SELECT * FROM entry";
         $q = $this->dbh->prepare($sql);
         $q->execute();
 
+        $result = $q->fetchAll(PDO::FETCH_ASSOC);
+
+        return $result;
     }
 
     public function close()
