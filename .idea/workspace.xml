@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e2b8a2b-02cd-4ba1-b507-cee3bc18294f" name="Default" comment="" />
+    <list default="true" id="3e2b8a2b-02cd-4ba1-b507-cee3bc18294f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Entry.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Book.iml" afterPath="$PROJECT_DIR$/.idea/Book.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase.php" afterPath="$PROJECT_DIR$/DataBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.php" afterPath="$PROJECT_DIR$/db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Book.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -26,25 +42,60 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="db.php" pinned="false" current-in-tab="true">
-        <entry file="file:///opt/lampp/htdocs/Book/db.php">
+        <entry file="file://$PROJECT_DIR$/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5555556" vertical-offset="315" max-vertical-offset="975">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.3030303" vertical-offset="0" max-vertical-offset="630">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="e#6#85#0#PHP" expanded="true" />
-                <marker date="1435948042689" expanded="true" signature="468:547" placeholder="INSERT INTO ..." />
-                <marker date="1435948042689" expanded="true" signature="820:856" placeholder="SELECT * FRO..entry..." />
-                <marker date="1435948042689" expanded="true" signature="1072:1091" placeholder="SELECT * FRO..entry..." />
+                <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
+                <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
+                <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
+                <element signature="n#findAll#0;n#Entry#0;n#!!top" expanded="false" />
+                <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
+                <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
+                <marker date="1436229913438" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
+                <marker date="1436229913438" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
+                <marker date="1436229913438" expanded="true" signature="1001:1020" placeholder="SELECT * FRO..entry..." />
+                <marker date="1436229913438" expanded="true" signature="1224:1248" placeholder="DELETE FROM ..." />
+                <marker date="1436229913438" expanded="true" signature="1224:1256" placeholder="DELETE FROM ..." />
+                <marker date="1436229913438" expanded="true" signature="1433:1473" placeholder="UPDATE entry..." />
+                <marker date="1436229913438" expanded="true" signature="1433:1474" placeholder="UPDATE entry..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/Admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="645">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <marker date="1436122116239" expanded="true" signature="331:378" placeholder="SELECT passw..admin..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_entry_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/migrations/create_entry_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="570">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding>
+                <element signature="e#6#86#0#PHP" expanded="true" />
+                <marker date="1436116972303" expanded="true" signature="691:707" placeholder="DROP TABLE e..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DataBase.php" pinned="false" current-in-tab="false">
-        <entry file="file:///opt/lampp/htdocs/Book/DataBase.php">
+        <entry file="file://$PROJECT_DIR$/DataBase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="375">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="375">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="95" />
               <folding>
                 <element signature="e#6#84#0#PHP" expanded="true" />
               </folding>
@@ -53,26 +104,19 @@
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file:///opt/lampp/htdocs/Book/index.php">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entry.php" pinned="false" current-in-tab="false">
-        <entry file="file:///opt/lampp/htdocs/Book/Entry.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="495">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -86,9 +130,11 @@
         <option value="$PROJECT_DIR$/Entry.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/DataBase.php" />
+        <option value="$PROJECT_DIR$/migrations/create_entry_table.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/admin/Admin.php" />
         <option value="$PROJECT_DIR$/db.php" />
-        <option value="/opt/lampp/htdocs/Book/index.php" />
-        <option value="/opt/lampp/htdocs/Book/db.php" />
+        <option value="$PROJECT_DIR$/db.php" />
       </list>
     </option>
   </component>
@@ -118,7 +164,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -149,6 +195,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -158,14 +242,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.lastSelected" value="Errors" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_opened_file_path" value="/opt/lampp/htdocs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="/opt/lampp/htdocs" />
+      <recent name="$PROJECT_DIR$/.." />
       <recent name="C:\OpenServer\domains\localhost\Book" />
     </key>
   </component>
@@ -184,6 +268,9 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -191,9 +278,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -211,13 +295,34 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="30" width="1368" height="739" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -228,12 +333,11 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -252,9 +356,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -272,28 +376,101 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///opt/lampp/htdocs/Book/db.php">
+    <entry file="file://$PROJECT_DIR$/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+            <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#findAll#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
+            <marker date="1436229913438" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
+            <marker date="1436229913438" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436229913438" expanded="true" signature="1001:1020" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436229913438" expanded="true" signature="1224:1248" placeholder="DELETE FROM ..." />
+            <marker date="1436229913438" expanded="true" signature="1224:1256" placeholder="DELETE FROM ..." />
+            <marker date="1436229913438" expanded="true" signature="1433:1473" placeholder="UPDATE entry..." />
+            <marker date="1436229913438" expanded="true" signature="1433:1474" placeholder="UPDATE entry..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="645">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <marker date="1436122116239" expanded="true" signature="331:378" placeholder="SELECT passw..admin..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/create_entry_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="570">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1436116972303" expanded="true" signature="691:707" placeholder="DROP TABLE e..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="375">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="95" />
+          <folding>
+            <element signature="e#6#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1435948042689" expanded="true" signature="468:547" placeholder="INSERT INTO ..." />
-            <marker date="1435948042689" expanded="true" signature="820:856" placeholder="SELECT * FRO..entry..." />
-            <marker date="1435948042689" expanded="true" signature="1072:1091" placeholder="SELECT * FRO..entry..." />
+            <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#findAll#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
+            <marker date="1436229913438" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
+            <marker date="1436229913438" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436229913438" expanded="true" signature="1001:1020" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436229913438" expanded="true" signature="1224:1248" placeholder="DELETE FROM ..." />
+            <marker date="1436229913438" expanded="true" signature="1224:1256" placeholder="DELETE FROM ..." />
+            <marker date="1436229913438" expanded="true" signature="1433:1473" placeholder="UPDATE entry..." />
+            <marker date="1436229913438" expanded="true" signature="1433:1474" placeholder="UPDATE entry..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/DataBase.php">
+    <entry file="file://$PROJECT_DIR$/DataBase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="375">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
@@ -303,7 +480,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/index.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
@@ -311,28 +488,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/Entry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="495">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/db.php">
+    <entry file="file://$PROJECT_DIR$/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1435948042689" expanded="true" signature="468:547" placeholder="INSERT INTO ..." />
-            <marker date="1435948042689" expanded="true" signature="820:856" placeholder="SELECT * FRO..entry..." />
-            <marker date="1435948042689" expanded="true" signature="1072:1091" placeholder="SELECT * FRO..entry..." />
+            <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#findAll#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
+            <marker date="1436229913438" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
+            <marker date="1436229913438" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436229913438" expanded="true" signature="1001:1020" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436229913438" expanded="true" signature="1224:1248" placeholder="DELETE FROM ..." />
+            <marker date="1436229913438" expanded="true" signature="1224:1256" placeholder="DELETE FROM ..." />
+            <marker date="1436229913438" expanded="true" signature="1433:1473" placeholder="UPDATE entry..." />
+            <marker date="1436229913438" expanded="true" signature="1433:1474" placeholder="UPDATE entry..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/DataBase.php">
+    <entry file="file://$PROJECT_DIR$/DataBase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="375">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
@@ -342,7 +521,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/index.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
@@ -350,47 +529,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/Entry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="495">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/db.php">
+    <entry file="file://$PROJECT_DIR$/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1435948042689" expanded="true" signature="468:547" placeholder="INSERT INTO ..." />
-            <marker date="1435948042689" expanded="true" signature="820:856" placeholder="SELECT * FRO..entry..." />
-            <marker date="1435948042689" expanded="true" signature="1072:1091" placeholder="SELECT * FRO..entry..." />
+            <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#findAll#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
+            <marker date="1436229913438" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
+            <marker date="1436229913438" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436229913438" expanded="true" signature="1001:1020" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436229913438" expanded="true" signature="1224:1248" placeholder="DELETE FROM ..." />
+            <marker date="1436229913438" expanded="true" signature="1224:1256" placeholder="DELETE FROM ..." />
+            <marker date="1436229913438" expanded="true" signature="1433:1473" placeholder="UPDATE entry..." />
+            <marker date="1436229913438" expanded="true" signature="1433:1474" placeholder="UPDATE entry..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/index.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/Entry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="561">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/Entry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="495">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -402,33 +567,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/index.php">
+    <entry file="file://$PROJECT_DIR$/migrations/create_entry_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="570">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1436116972303" expanded="true" signature="691:707" placeholder="DROP TABLE e..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/DataBase.php">
+    <entry file="file://$PROJECT_DIR$/DataBase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="375">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="375">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="95" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/lampp/htdocs/Book/db.php">
+    <entry file="file://$PROJECT_DIR$/admin/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5555556" vertical-offset="315" max-vertical-offset="975">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="645">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <marker date="1436122116239" expanded="true" signature="331:378" placeholder="SELECT passw..admin..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3030303" vertical-offset="0" max-vertical-offset="630">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1435948042689" expanded="true" signature="468:547" placeholder="INSERT INTO ..." />
-            <marker date="1435948042689" expanded="true" signature="820:856" placeholder="SELECT * FRO..entry..." />
-            <marker date="1435948042689" expanded="true" signature="1072:1091" placeholder="SELECT * FRO..entry..." />
+            <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#findAll#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
+            <marker date="1436229913438" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
+            <marker date="1436229913438" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436229913438" expanded="true" signature="1001:1020" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436229913438" expanded="true" signature="1224:1248" placeholder="DELETE FROM ..." />
+            <marker date="1436229913438" expanded="true" signature="1224:1256" placeholder="DELETE FROM ..." />
+            <marker date="1436229913438" expanded="true" signature="1433:1473" placeholder="UPDATE entry..." />
+            <marker date="1436229913438" expanded="true" signature="1433:1474" placeholder="UPDATE entry..." />
           </folding>
         </state>
       </provider>
