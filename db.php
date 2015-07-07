@@ -10,9 +10,7 @@ require_once('DataBase.php');
 
 class Entry extends DataBase
 {
-    private $content;
-    private $status;
-    private $date;
+
 
     function __construct()
     {
@@ -21,13 +19,16 @@ class Entry extends DataBase
 
     public function save()
     {
-        $this->content = mysql_real_escape_string($this->content);
-        $sql = "INSERT INTO entry (content,date,status) VALUES (':content', ':date', ':status')";
-        $q = $this->dbh->prepare($sql);
-        $q->bindParam(':content', $this->content);
-        $q->bindParam(':date', $this->date);
-        $q->bindParam(':status', $this->status);
-        $q->execute();
+        if(!empty($_POST['content'])) {
+            $content = trim(mysql_real_escape_string($_POST['content']));
+            $sql = "INSERT INTO entry (content) VALUES (:content)";
+            $q = $this->dbh->prepare($sql);
+            $q->bindParam(':content', $content, PDO::PARAM_STR);
+            $q->execute();
+        } else {
+            header("Location: http://localhost/Book");
+        }
+
     }
 
 
@@ -44,13 +45,7 @@ class Entry extends DataBase
 
     public function findAll()
     {
-        //$sql = "SELECT * FROM entry";
-        //$q = $this->dbh->prepare($sql);
-        //$q->execute();
 
-        //$result = $q->fetchAll(PDO::FETCH_ASSOC);
-
-        //return $result;
 
 
         try {
@@ -59,7 +54,7 @@ class Entry extends DataBase
             $total = $this->dbh->query('SELECT COUNT(*) FROM entry')->fetchColumn();
 
             // How many items to list per page
-            $limit = 20;
+            $limit = 5;
 
             // How many pages will there be
             $pages = ceil($total / $limit);
@@ -75,18 +70,7 @@ class Entry extends DataBase
             // Calculate the offset for the query
             $offset = ($page - 1)  * $limit;
 
-            // Some information to display to the user
-            $start = $offset + 1;
-            $end = min(($offset + $limit), $total);
 
-            // The "back" link
-            $prevlink = ($page > 1) ? '<a href="?page=1" title="First page">&laquo;</a> <a href="?page=' . ($page - 1) . '" title="Previous page">&lsaquo;</a>' : '<span class="disabled">&laquo;</span> <span class="disabled">&lsaquo;</span>';
-
-            // The "forward" link
-            $nextlink = ($page < $pages) ? '<a href="?page=' . ($page + 1) . '" title="Next page">&rsaquo;</a> <a href="?page=' . $pages . '" title="Last page">&raquo;</a>' : '<span class="disabled">&rsaquo;</span> <span class="disabled">&raquo;</span>';
-
-            // Display the paging information
-            echo '<div id="paging"><p>', $prevlink, ' Page ', $page, ' of ', $pages, ' pages, displaying ', $start, '-', $end, ' of ', $total, ' results ', $nextlink, ' </p></div>';
 
             // Prepare the paged query
             $stmt = $this->dbh->prepare('SELECT * FROM entry ORDER BY date LIMIT :limit OFFSET :offset');
@@ -104,7 +88,7 @@ class Entry extends DataBase
 
                 // Display the results
                 foreach ($iterator as $row) {
-                    echo '<p>', $row['content'], '</p>';
+                    echo '<textarea class="form-control" readonly>', $row['content'], '</textarea>';
                 }
 
             } else {
