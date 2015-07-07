@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e2b8a2b-02cd-4ba1-b507-cee3bc18294f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Entry.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Book.iml" afterPath="$PROJECT_DIR$/.idea/Book.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase.php" afterPath="$PROJECT_DIR$/DataBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.php" afterPath="$PROJECT_DIR$/db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Book.iws" />
@@ -41,26 +27,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="db.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3030303" vertical-offset="0" max-vertical-offset="630">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            <state vertical-scroll-proportion="10.166667" vertical-offset="589" max-vertical-offset="1620">
+              <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
               <folding>
                 <element signature="e#6#85#0#PHP" expanded="true" />
                 <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
                 <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
                 <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
-                <element signature="n#findAll#0;n#Entry#0;n#!!top" expanded="false" />
+                <element signature="n#delete#0;n#Entry#0;n#!!top" expanded="false" />
                 <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
                 <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
-                <marker date="1436229913438" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
-                <marker date="1436229913438" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
-                <marker date="1436229913438" expanded="true" signature="1001:1020" placeholder="SELECT * FRO..entry..." />
-                <marker date="1436229913438" expanded="true" signature="1224:1248" placeholder="DELETE FROM ..." />
-                <marker date="1436229913438" expanded="true" signature="1224:1256" placeholder="DELETE FROM ..." />
-                <marker date="1436229913438" expanded="true" signature="1433:1473" placeholder="UPDATE entry..." />
-                <marker date="1436229913438" expanded="true" signature="1433:1474" placeholder="UPDATE entry..." />
+                <marker date="1436231051094" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
+                <marker date="1436231051094" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
+                <marker date="1436231051094" expanded="true" signature="1003:1022" placeholder="SELECT * FRO..entry..." />
+                <marker date="1436231051094" expanded="true" signature="1285:1306" placeholder="SELECT COUNT..table..." />
+                <marker date="1436231051094" expanded="true" signature="1285:1311" placeholder="SELECT COUNT..entry..." />
+                <marker date="1436231051094" expanded="true" signature="2891:2952" placeholder="SELECT *FROM..table..." />
+                <marker date="1436231051094" expanded="true" signature="3821:3845" placeholder="DELETE FROM ..." />
+                <marker date="1436231051094" expanded="true" signature="3821:3853" placeholder="DELETE FROM ..." />
+                <marker date="1436231051094" expanded="true" signature="4030:4070" placeholder="UPDATE entry..." />
+                <marker date="1436231051094" expanded="true" signature="4030:4071" placeholder="UPDATE entry..." />
               </folding>
             </state>
           </provider>
@@ -69,7 +58,7 @@
       <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="645">
+            <state vertical-scroll-proportion="-19.125" vertical-offset="51" max-vertical-offset="645">
               <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <marker date="1436122116239" expanded="true" signature="331:378" placeholder="SELECT passw..admin..." />
@@ -81,7 +70,7 @@
       <file leaf-file-name="create_entry_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migrations/create_entry_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="570">
+            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="570">
               <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
@@ -103,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5555556" vertical-offset="0" max-vertical-offset="594">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -128,13 +117,13 @@
         <option value="$PROJECT_DIR$/main/index.php" />
         <option value="$PROJECT_DIR$/main/CreateEntry.php" />
         <option value="$PROJECT_DIR$/Entry.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/DataBase.php" />
         <option value="$PROJECT_DIR$/migrations/create_entry_table.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/admin/Admin.php" />
         <option value="$PROJECT_DIR$/db.php" />
         <option value="$PROJECT_DIR$/db.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -293,6 +282,19 @@
       <option name="number" value="Default" />
       <updated>1435679291250</updated>
     </task>
+    <task id="LOCAL-00001" summary="update function">
+      <created>1436229980461</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1436229980461</updated>
+    </task>
+    <task id="LOCAL-00002" summary="pagination">
+      <created>1436231218121</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1436231218121</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -319,6 +321,7 @@
     <frame x="-1" y="30" width="1368" height="739" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -376,7 +379,10 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
+    <MESSAGE value="update function" />
+    <MESSAGE value="pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="pagination" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -394,16 +400,19 @@
             <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
-            <element signature="n#findAll#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
-            <marker date="1436229913438" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
-            <marker date="1436229913438" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
-            <marker date="1436229913438" expanded="true" signature="1001:1020" placeholder="SELECT * FRO..entry..." />
-            <marker date="1436229913438" expanded="true" signature="1224:1248" placeholder="DELETE FROM ..." />
-            <marker date="1436229913438" expanded="true" signature="1224:1256" placeholder="DELETE FROM ..." />
-            <marker date="1436229913438" expanded="true" signature="1433:1473" placeholder="UPDATE entry..." />
-            <marker date="1436229913438" expanded="true" signature="1433:1474" placeholder="UPDATE entry..." />
+            <marker date="1436231051094" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
+            <marker date="1436231051094" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436231051094" expanded="true" signature="1003:1022" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436231051094" expanded="true" signature="1285:1306" placeholder="SELECT COUNT..table..." />
+            <marker date="1436231051094" expanded="true" signature="1285:1311" placeholder="SELECT COUNT..entry..." />
+            <marker date="1436231051094" expanded="true" signature="2891:2952" placeholder="SELECT *FROM..table..." />
+            <marker date="1436231051094" expanded="true" signature="3821:3845" placeholder="DELETE FROM ..." />
+            <marker date="1436231051094" expanded="true" signature="3821:3853" placeholder="DELETE FROM ..." />
+            <marker date="1436231051094" expanded="true" signature="4030:4070" placeholder="UPDATE entry..." />
+            <marker date="1436231051094" expanded="true" signature="4030:4071" placeholder="UPDATE entry..." />
           </folding>
         </state>
       </provider>
@@ -456,16 +465,19 @@
             <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
-            <element signature="n#findAll#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
-            <marker date="1436229913438" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
-            <marker date="1436229913438" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
-            <marker date="1436229913438" expanded="true" signature="1001:1020" placeholder="SELECT * FRO..entry..." />
-            <marker date="1436229913438" expanded="true" signature="1224:1248" placeholder="DELETE FROM ..." />
-            <marker date="1436229913438" expanded="true" signature="1224:1256" placeholder="DELETE FROM ..." />
-            <marker date="1436229913438" expanded="true" signature="1433:1473" placeholder="UPDATE entry..." />
-            <marker date="1436229913438" expanded="true" signature="1433:1474" placeholder="UPDATE entry..." />
+            <marker date="1436231051094" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
+            <marker date="1436231051094" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436231051094" expanded="true" signature="1003:1022" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436231051094" expanded="true" signature="1285:1306" placeholder="SELECT COUNT..table..." />
+            <marker date="1436231051094" expanded="true" signature="1285:1311" placeholder="SELECT COUNT..entry..." />
+            <marker date="1436231051094" expanded="true" signature="2891:2952" placeholder="SELECT *FROM..table..." />
+            <marker date="1436231051094" expanded="true" signature="3821:3845" placeholder="DELETE FROM ..." />
+            <marker date="1436231051094" expanded="true" signature="3821:3853" placeholder="DELETE FROM ..." />
+            <marker date="1436231051094" expanded="true" signature="4030:4070" placeholder="UPDATE entry..." />
+            <marker date="1436231051094" expanded="true" signature="4030:4071" placeholder="UPDATE entry..." />
           </folding>
         </state>
       </provider>
@@ -497,16 +509,19 @@
             <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
-            <element signature="n#findAll#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
-            <marker date="1436229913438" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
-            <marker date="1436229913438" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
-            <marker date="1436229913438" expanded="true" signature="1001:1020" placeholder="SELECT * FRO..entry..." />
-            <marker date="1436229913438" expanded="true" signature="1224:1248" placeholder="DELETE FROM ..." />
-            <marker date="1436229913438" expanded="true" signature="1224:1256" placeholder="DELETE FROM ..." />
-            <marker date="1436229913438" expanded="true" signature="1433:1473" placeholder="UPDATE entry..." />
-            <marker date="1436229913438" expanded="true" signature="1433:1474" placeholder="UPDATE entry..." />
+            <marker date="1436231051094" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
+            <marker date="1436231051094" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436231051094" expanded="true" signature="1003:1022" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436231051094" expanded="true" signature="1285:1306" placeholder="SELECT COUNT..table..." />
+            <marker date="1436231051094" expanded="true" signature="1285:1311" placeholder="SELECT COUNT..entry..." />
+            <marker date="1436231051094" expanded="true" signature="2891:2952" placeholder="SELECT *FROM..table..." />
+            <marker date="1436231051094" expanded="true" signature="3821:3845" placeholder="DELETE FROM ..." />
+            <marker date="1436231051094" expanded="true" signature="3821:3853" placeholder="DELETE FROM ..." />
+            <marker date="1436231051094" expanded="true" signature="4030:4070" placeholder="UPDATE entry..." />
+            <marker date="1436231051094" expanded="true" signature="4030:4071" placeholder="UPDATE entry..." />
           </folding>
         </state>
       </provider>
@@ -538,16 +553,19 @@
             <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
-            <element signature="n#findAll#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
             <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
-            <marker date="1436229913438" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
-            <marker date="1436229913438" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
-            <marker date="1436229913438" expanded="true" signature="1001:1020" placeholder="SELECT * FRO..entry..." />
-            <marker date="1436229913438" expanded="true" signature="1224:1248" placeholder="DELETE FROM ..." />
-            <marker date="1436229913438" expanded="true" signature="1224:1256" placeholder="DELETE FROM ..." />
-            <marker date="1436229913438" expanded="true" signature="1433:1473" placeholder="UPDATE entry..." />
-            <marker date="1436229913438" expanded="true" signature="1433:1474" placeholder="UPDATE entry..." />
+            <marker date="1436231051094" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
+            <marker date="1436231051094" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436231051094" expanded="true" signature="1003:1022" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436231051094" expanded="true" signature="1285:1306" placeholder="SELECT COUNT..table..." />
+            <marker date="1436231051094" expanded="true" signature="1285:1311" placeholder="SELECT COUNT..entry..." />
+            <marker date="1436231051094" expanded="true" signature="2891:2952" placeholder="SELECT *FROM..table..." />
+            <marker date="1436231051094" expanded="true" signature="3821:3845" placeholder="DELETE FROM ..." />
+            <marker date="1436231051094" expanded="true" signature="3821:3853" placeholder="DELETE FROM ..." />
+            <marker date="1436231051094" expanded="true" signature="4030:4070" placeholder="UPDATE entry..." />
+            <marker date="1436231051094" expanded="true" signature="4030:4071" placeholder="UPDATE entry..." />
           </folding>
         </state>
       </provider>
@@ -567,17 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/create_entry_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="570">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1436116972303" expanded="true" signature="691:707" placeholder="DROP TABLE e..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataBase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="375">
@@ -588,9 +595,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="10.166667" vertical-offset="589" max-vertical-offset="1620">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+            <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
+            <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
+            <marker date="1436231051094" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
+            <marker date="1436231051094" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436231051094" expanded="true" signature="1003:1022" placeholder="SELECT * FRO..entry..." />
+            <marker date="1436231051094" expanded="true" signature="1285:1306" placeholder="SELECT COUNT..table..." />
+            <marker date="1436231051094" expanded="true" signature="1285:1311" placeholder="SELECT COUNT..entry..." />
+            <marker date="1436231051094" expanded="true" signature="2891:2952" placeholder="SELECT *FROM..table..." />
+            <marker date="1436231051094" expanded="true" signature="3821:3845" placeholder="DELETE FROM ..." />
+            <marker date="1436231051094" expanded="true" signature="3821:3853" placeholder="DELETE FROM ..." />
+            <marker date="1436231051094" expanded="true" signature="4030:4070" placeholder="UPDATE entry..." />
+            <marker date="1436231051094" expanded="true" signature="4030:4071" placeholder="UPDATE entry..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="645">
+        <state vertical-scroll-proportion="-19.125" vertical-offset="51" max-vertical-offset="645">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <marker date="1436122116239" expanded="true" signature="331:378" placeholder="SELECT passw..admin..." />
@@ -598,34 +631,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/migrations/create_entry_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1436116972303" expanded="true" signature="691:707" placeholder="DROP TABLE e..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3030303" vertical-offset="0" max-vertical-offset="630">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-            <element signature="n#__construct#0;n#Entry#0;n#!!top" expanded="false" />
-            <element signature="n#save#0;n#Entry#0;n#!!top" expanded="false" />
-            <element signature="n#find#0;n#Entry#0;n#!!top" expanded="false" />
-            <element signature="n#findAll#0;n#Entry#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#Entry#0;n#!!top" expanded="false" />
-            <element signature="n#close#0;n#Entry#0;n#!!top" expanded="false" />
-            <marker date="1436229913438" expanded="true" signature="399:478" placeholder="INSERT INTO ..." />
-            <marker date="1436229913438" expanded="true" signature="749:785" placeholder="SELECT * FRO..entry..." />
-            <marker date="1436229913438" expanded="true" signature="1001:1020" placeholder="SELECT * FRO..entry..." />
-            <marker date="1436229913438" expanded="true" signature="1224:1248" placeholder="DELETE FROM ..." />
-            <marker date="1436229913438" expanded="true" signature="1224:1256" placeholder="DELETE FROM ..." />
-            <marker date="1436229913438" expanded="true" signature="1433:1473" placeholder="UPDATE entry..." />
-            <marker date="1436229913438" expanded="true" signature="1433:1474" placeholder="UPDATE entry..." />
-          </folding>
+        <state vertical-scroll-proportion="0.5555556" vertical-offset="0" max-vertical-offset="594">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
