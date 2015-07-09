@@ -88,7 +88,10 @@ class Entry extends DataBase
 
                 // Display the results
                 foreach ($iterator as $row) {
-                    echo '<textarea class="form-control" readonly>', $row['content'], '</textarea>';
+                    echo '<blockquote>';
+                    echo $row['content'];
+                    echo $row['status'] ? '<footer>reviewed</footer>':'<footer>not reviewed</footer>';
+                    echo '</blockquote>';
                 }
 
             } else {
@@ -108,7 +111,7 @@ class Entry extends DataBase
         $q->execute();
     }
 
-    public function update($id)
+    public function updateStatus($id)
     {
         $sql = "UPDATE entry SET status = 1 WHERE id = :$id";
         $q = $this->dbh->prepare($sql);
