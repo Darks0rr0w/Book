@@ -21,10 +21,12 @@ class Entry extends DataBase
 
     public function save($content)
     {
-            $sql = "INSERT INTO entry (content) VALUES (:content)";
-            $q = $this->dbh->prepare($sql);
-            $q->bindParam(':content', $content, PDO::PARAM_STR);
-            $q->execute();
+            if (!empty($content)) {
+                $sql = "INSERT INTO entry (content) VALUES (:content)";
+                $q = $this->dbh->prepare($sql);
+                $q->bindParam(':content', $content, PDO::PARAM_STR);
+                $q->execute();
+            }
     }
 
 

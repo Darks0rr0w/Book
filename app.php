@@ -34,7 +34,7 @@ class App
     }
     public static function saveEntry()
     {
-        $content = trim($_POST['content']);
+        $content = trim(strip_tags($_POST['content']));
         $test = new Entry();
         $test->save($content);
     }
