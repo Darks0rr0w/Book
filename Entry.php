@@ -9,6 +9,7 @@
 require_once('DataBase.php');
 require_once('Admin.php');
 
+
 class Entry extends DataBase
 {
 
@@ -18,18 +19,12 @@ class Entry extends DataBase
         parent::__construct();
     }
 
-    public function save()
+    public function save($content)
     {
-        if(!empty($_POST['content'])) {
-            $content = trim(mysql_real_escape_string($_POST['content']));
             $sql = "INSERT INTO entry (content) VALUES (:content)";
             $q = $this->dbh->prepare($sql);
             $q->bindParam(':content', $content, PDO::PARAM_STR);
             $q->execute();
-        } else {
-            header("Location: http://localhost/Book");
-        }
-
     }
 
 
@@ -98,10 +93,12 @@ class Entry extends DataBase
                         echo '<div class="form-group">';
                             echo '<div class="col-sm-offset-0 col-sm-10">';
                                 echo '<div class="checkbox">';
-                                    echo '<label>';
-                                        echo '<input type="checkbox" name="checkbox[]"  value="'.$row['id'].'"/>';
-                                            echo '<div>Mark as reviewed</div>';
+                                    echo '<label class="checkbox-inline">';
+                                    echo '<input type="checkbox" name="review[]"  value="'.$row['id'].'"/>Mark as reviewed';
                                     echo '</label>';
+                                    echo '<label class="checkbox-inline">';
+                                    echo '<input type="checkbox" name="delete[]"  value="'.$row['id'].'"/>Delete entry';
+                                    echo '<label>';
                                 echo '</div>';
                             echo '</div>';
                         echo '</div>';
@@ -121,23 +118,19 @@ class Entry extends DataBase
 
     public  function delete($id)
     {
-
-        $sql = "DELETE FROM entry WHERE id = :id";
-        $q = $this->dbh->prepare($sql);
-        $q->bindParam('id', $id, PDO::PARAM_INT);
-        $q->execute();
+                $sql = "DELETE FROM entry WHERE id = :id";
+                $q = $this->dbh->prepare($sql);
+                $q->bindParam('id', $id, PDO::PARAM_INT);
+                $q->execute();
     }
 
-    public  function updateStatus($entries)
+    public  function update($id)
     {
-        if (!empty($entries)) {
-            foreach($entries as $id){
-            $sql = "UPDATE entry SET status = 1 WHERE id = :id";
+            $sql = "UPDATE entry SET status = 1  WHERE id = :id";
             $q = $this->dbh->prepare($sql);
             $q->bindParam('id',$id, PDO::PARAM_INT);
             $q->execute();
-            }
-        }
+
     }
 
     public function close()

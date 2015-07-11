@@ -1,21 +1,28 @@
 <?php
 
 require_once('Entry.php');
-    if (isset($_GET['logout']))
-    {
+require_once('app.php');
+
+    if (isset($_GET['logout'])) {
         Admin::logout();
         header('Location: http://localhost/Book');
     }
-    $test = new Entry();
-        if (isset($_POST['submit'])){
-            $test->save();
+    if (isset($_POST['submit'])){
+        if(!empty($_POST['content'])) {
+            App::saveEntry();
+        } else {
+            header("Location: http://localhost/Book");
+            }
         }
-    if(isset($_POST['update']) && !empty($_POST['checkbox']))
-    {
-            $checked_values = $_POST['checkbox'];
-            $obj = new Entry();
-            $obj->updateStatus($checked_values);
+    if (isset($_POST['update']) && !empty($_POST['review'])) {
+        App::updateStatus();
     }
+    if (isset($_POST['update']) && !empty($_POST['delete'])){
+        App::deleteEntries();
+    }
+
+
+
 ?>
 <!DOCTYPE HTML>
 
@@ -41,7 +48,7 @@ require_once('Entry.php');
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
-                <a class="navbar-brand" href="#">Home</a>
+                <a class="navbar-brand" href="index.php">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,14 +82,22 @@ require_once('Entry.php');
 
 
     <form action="index.php" method="POST">
-        <?php $test->findAll(); ?>
+        <?php $test = new Entry(); $test->findAll(); ?>
         <div class="form-group">
-            <label  for="Content">Leave your opinion below:</label>
-            <textarea class="form-control" name="content" rows="5" id="Content"></textarea>
-            <input type="submit" name="submit" align="center" class="btn btn-primary" value="Submit">
+            <?php
+                if (!Admin::isAdmin()){
+            ?>
+                <label  for="Content">Leave your opinion below:</label>
+                <textarea class="form-control" name="content" rows="5" id="Content"></textarea>
+                <input type="submit" name="submit" align="center" class="btn btn-primary" value="Submit">
+            <?php
+                }
+            ?>
             <?php
             if (Admin::isAdmin()){
-                echo '<input type="submit" name = "update" class="btn btn-primary" value="Update">';
+                if(!empty($_POST['review']) || !empty($_POST['delete'])) {
+                    echo '<input type="submit" name = "update" class="btn btn-primary" value="Update">';
+                }
             }
             ?>
         </div>
