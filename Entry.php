@@ -89,13 +89,15 @@ class Entry extends DataBase
                     echo '<blockquote>';
                     echo $row['content'];
                     echo $row['status'] ? '<footer>reviewed</footer>':'<footer>not reviewed</footer>';
-                    if (Admin::isAdmin() && $row['status'] == false ){
+                    if (Admin::isAdmin()){
                         echo '<div class="form-group">';
                             echo '<div class="col-sm-offset-0 col-sm-10">';
                                 echo '<div class="checkbox">';
-                                    echo '<label class="checkbox-inline">';
-                                    echo '<input type="checkbox" name="review[]"  value="'.$row['id'].'"/>Mark as reviewed';
-                                    echo '</label>';
+                                    if ($row['status'] == false ) {
+                                        echo '<label class="checkbox-inline">';
+                                        echo '<input type="checkbox" name="review[]"  value="' . $row['id'] . '"/>Mark as reviewed';
+                                        echo '</label>';
+                                    }
                                     echo '<label class="checkbox-inline">';
                                     echo '<input type="checkbox" name="delete[]"  value="'.$row['id'].'"/>Delete entry';
                                     echo '<label>';

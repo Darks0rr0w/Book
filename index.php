@@ -95,9 +95,7 @@ require_once('app.php');
             ?>
             <?php
             if (Admin::isAdmin()){
-                if(!empty($_POST['review']) || !empty($_POST['delete'])) {
                     echo '<input type="submit" name = "update" class="btn btn-primary" value="Update">';
-                }
             }
             ?>
         </div>

@@ -22,7 +22,6 @@ class Admin extends DataBase
     }
 
 
-
     public function registerAdmin()
     {
         $login = "admin";
