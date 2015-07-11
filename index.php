@@ -1,17 +1,21 @@
 <?php
 
 require_once('Entry.php');
-$test = new Entry();
-    if (isset($_POST['submit'])){
-        $test->save();
+    if (isset($_GET['logout']))
+    {
+        Admin::logout();
+        header('Location: http://localhost/Book');
     }
-if(isset($_POST['update']) && !empty($_POST['checkbox']))
-{
-        $checked_values = $_POST['checkbox'];
-        $obj = new Entry();
-        $obj->updateStatus($checked_values);
-
-}
+    $test = new Entry();
+        if (isset($_POST['submit'])){
+            $test->save();
+        }
+    if(isset($_POST['update']) && !empty($_POST['checkbox']))
+    {
+            $checked_values = $_POST['checkbox'];
+            $obj = new Entry();
+            $obj->updateStatus($checked_values);
+    }
 ?>
 <!DOCTYPE HTML>
 
@@ -28,8 +32,9 @@ if(isset($_POST['update']) && !empty($_POST['checkbox']))
 
 </head>
 
-    <div id="post">
+
     <body>
+    <div id="post">
 
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -40,12 +45,27 @@ if(isset($_POST['update']) && !empty($_POST['checkbox']))
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
+            <form action="index.php" method="post">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="login.php">Login as admin</a></li>
-                    <li><a href="index.php">Logout</a></li>
+                    <?php
+                      if (!Admin::isAdmin()) {
+                          ?>
+                          <li><a href="login.php">Login as admin</a></li>
+                          <?php
+                      }
+                    ?>
+
+                    <?php
+                        if (Admin::isAdmin()) {
+                            ?>
+                            <li><a name="logout" href="index.php?logout=true">Logout</a></li>
+                            <?php
+                        }
+                    ?>
                 </ul>
             </div><!-- /.navbar-collapse -->
+            </form>
         </div><!-- /.container-fluid -->
     </nav>
 
@@ -89,7 +109,7 @@ if(isset($_POST['update']) && !empty($_POST['checkbox']))
         </div>
     </form>
 </div>
-</div>
+
 
 </body>
 

@@ -61,28 +61,29 @@ class Entry extends DataBase
             $pages = ceil($total / $limit);
 
             // What page are we currently on?
-            $page = min($pages, filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT, array(
+            $page = filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT, array(
                 'options' => array(
                     'default'   => 1,
                     'min_range' => 1,
                 ),
-            )));
+            ));
 
             // Calculate the offset for the query
             $offset = ($page - 1)  * $limit;
 
+            $stmt = null;
+            if ($pages >= $page) {
+                // Prepare the paged query
+                $stmt = $this->dbh->prepare('SELECT * FROM entry ORDER BY date LIMIT :limit OFFSET :offset');
 
-
-            // Prepare the paged query
-            $stmt = $this->dbh->prepare('SELECT * FROM entry ORDER BY date LIMIT :limit OFFSET :offset');
-
-            // Bind the query params
-            $stmt->bindParam(':limit', $limit, PDO::PARAM_INT);
-            $stmt->bindParam(':offset', $offset, PDO::PARAM_INT);
-            $stmt->execute();
+                // Bind the query params
+                $stmt->bindParam(':limit', $limit, PDO::PARAM_INT);
+                $stmt->bindParam(':offset', $offset, PDO::PARAM_INT);
+                $stmt->execute();
+            }
 
             // Do we have any results?
-            if ($stmt->rowCount() > 0) {
+            if ($stmt != null) {
                 // Define how we want to fetch the results
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $iterator = new IteratorIterator($stmt);
@@ -93,7 +94,7 @@ class Entry extends DataBase
                     echo '<blockquote>';
                     echo $row['content'];
                     echo $row['status'] ? '<footer>reviewed</footer>':'<footer>not reviewed</footer>';
-                    if (Admin::isAdmin()){
+                    if (Admin::isAdmin() && $row['status'] == false ){
                         echo '<div class="form-group">';
                             echo '<div class="col-sm-offset-0 col-sm-10">';
                                 echo '<div class="checkbox">';
