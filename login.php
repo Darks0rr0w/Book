@@ -1,10 +1,15 @@
 <?php
 require_once('Admin.php');
-require_once('db.php');
+require_once('Entry.php');
 require_once('DataBase.php');
-if(isset($_POST['login'])){
-    echo 'login';
+if(isset($_POST['login'])) {
+    $user = new Admin();
+    if ($user->verifyAdmin($_POST['username'], $_POST['password'])){
+        $user->login();
+        header("Location: http://localhost/Book/");
+    }
 }
+
 
 ?>
 <!DOCTYPE HTML>
@@ -30,9 +35,12 @@ if(isset($_POST['login'])){
         <div class="panel panel-info" >
             <div class="panel-heading">
                 <div class="panel-title">Sign In</div>
-
             </div>
-
+            <?php
+            if (isset($_POST['login']) && (!Admin::isAdmin())){
+                echo '<div class="alert alert-danger">Incorrect username or password</div>';
+            }
+            ?>
             <div style="padding-top:30px" class="panel-body" >
 
                 <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
