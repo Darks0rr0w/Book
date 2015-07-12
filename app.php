@@ -99,4 +99,15 @@ class App
         DBConnection::disconnect();
     }
 
+    public static function currentPage()
+    {
+        $page = filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT, array(
+            'options' => array(
+                'default'   => 1,
+                'min_range' => 1,
+            ),
+        ));
+        return $page;
+    }
+
 }
