@@ -1,5 +1,4 @@
 <?php
-
 require_once('Entry.php');
 require_once('app.php');
 
@@ -82,7 +81,7 @@ require_once('app.php');
 
 
     <form action="index.php" method="POST">
-        <?php $test = new Entry(); $test->findAll(); ?>
+        <?php App::displayAll(); ?>
         <div class="form-group">
             <?php
                 if (!Admin::isAdmin()){

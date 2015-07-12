@@ -1,7 +1,6 @@
 <?php
-require_once('Admin.php');
+require_once('admin/Admin.php');
 require_once('Entry.php');
-require_once('DataBase.php');
 if(isset($_POST['login'])) {
     $user = new Admin();
     if ($user->verifyAdmin($_POST['username'], $_POST['password'])){
@@ -22,13 +21,51 @@ if(isset($_POST['login'])) {
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Complains and suggestions</title>
 
 </head>
 
 <body>
 
+<div id="post">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+
+                <a class="navbar-brand" href="index.php">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <form action="index.php" method="post">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <?php
+                        if (!Admin::isAdmin()) {
+                            ?>
+                            <li><a href="login.php">Login as admin</a></li>
+                            <?php
+                        }
+                        ?>
+
+                        <?php
+                        if (Admin::isAdmin()) {
+                            ?>
+                            <li><a name="logout" href="index.php?logout=true">Logout</a></li>
+                            <?php
+                        }
+                        ?>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </form>
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
 <p class = "lead" align="center">Complains and suggestions</p>
+
+
 
 <div class="container">
     <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
