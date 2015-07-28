@@ -6,7 +6,7 @@
  * Time: 13:36
  */
 
-require_once('Entry.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/models/Entry.php');
 
 class App
 {
@@ -23,7 +23,7 @@ class App
     public static function updateStatus()
     {
             $obj = new Entry();
-            $obj->status = 1;
+            $obj->setStatus(1);
             $entries = $_POST['review'];
             if (!empty($entries)) {
                 foreach ($entries as $id) {
@@ -35,11 +35,12 @@ class App
     {
         $content = trim(strip_tags($_POST['content']));
         $entry = new Entry();
-        $entry->content = $content;
+        $entry->setContent($content);
         $entry->save();
     }
     public static function displayAll()
     {
+
         try {
             $total = Entry::count();
 
@@ -55,7 +56,6 @@ class App
             ));
 
             $offset = ($page - 1)  * $limit;
-
             if($pages >= $page){
                $entries =  Entry::findAll($limit, $offset);
             }
@@ -69,7 +69,9 @@ class App
 
                     echo '<blockquote>';
                     echo $row['content'];
-                    echo $row['status'] ? '<footer>reviewed</footer>':'<footer>not reviewed</footer>';
+                    echo $row['status'] ? '<footer> reviewed </footer>' :'<footer> not reviewed </footer>';
+                    echo '<div align="right"> '. $row['date'].' </div>';
+
                     if (Admin::isAdmin()){
                         echo '<div class="form-group">';
                         echo '<div class="col-sm-offset-0 col-sm-10">';

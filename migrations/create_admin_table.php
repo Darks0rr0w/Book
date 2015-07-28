@@ -6,7 +6,7 @@
  * Time: 20:12
  */
 
-require_once($_SERVER['DOCUMENT_ROOT'].'Book/DBConnection');
+require_once($_SERVER['DOCUMENT_ROOT'].'SnC/DBConnection');
 
 class AdminMigration
 {
@@ -14,10 +14,10 @@ class AdminMigration
     public function up()
     {
         $conn = DBConnection::connect();
-        $sql = "CREATE TABLE Book.admin
+        $sql = "CREATE TABLE SnC.admin
                 ( id INT NOT NULL AUTO_INCREMENT ,
-                login VARCHAR(256) NOT NULL ,
-                 password VARCHAR(256) NOT NULL ,
+                  login VARCHAR(256) NOT NULL ,
+                  password VARCHAR(256) NOT NULL ,
                   PRIMARY KEY (id))
                   ENGINE = InnoDB;";
         $q = $conn->prepare($sql);

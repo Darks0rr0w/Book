@@ -5,25 +5,77 @@
  * Date: 01.07.2015
  * Time: 19:41
  */
-require_once('admin/Admin.php');
-require_once('DBConnection.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/admin/Admin.php');
+require_once($_SERVER['DOCUMENT_ROOT'] .'/SnC/app/DBConnection.php');
 
 
 class Entry
 {
-    public $content;
-    public $date;
-    public $status;
+    private $content;
+
+    /**
+     * @return mixed
+     */
+    public function getContent()
+    {
+        return $this->content;
+    }
+
+    /**
+     * @param mixed $content
+     */
+    public function setContent($content)
+    {
+        $this->content = $content;
+    }
+    private $date;
+
+    /**
+     * @return mixed
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param mixed $date
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param mixed $status
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+    }
+    private $status;
+
+
     public function save()
     {
         $conn = DBConnection::connect();
 
         $content = $this->content;
+        $date = date('Y-m-d H:i:s');
 
             if (!empty($content)) {
-                $sql = "INSERT INTO entry (content) VALUES (:content)";
+                $sql = "INSERT INTO entry (content, date) VALUES (:content, :date)";
                 $q = $conn->prepare($sql);
                 $q->bindParam(':content', $content, PDO::PARAM_STR);
+                $q->bindParam(':date', $date, PDO::PARAM_STR);
                 $q->execute();
             }
         DBConnection::disconnect();

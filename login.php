@@ -1,11 +1,12 @@
 <?php
-require_once('admin/Admin.php');
-require_once('Entry.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/admin/Admin.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/models/Entry.php');
+
 if(isset($_POST['login'])) {
     $user = new Admin();
     if ($user->verifyAdmin($_POST['username'], $_POST['password'])){
         $user->login();
-        header("Location: http://localhost/Book/");
+        header("Location: http://localhost/SnC");
     }
 }
 
@@ -21,7 +22,7 @@ if(isset($_POST['login'])) {
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="web/style.css">
     <title>Complains and suggestions</title>
 
 </head>
@@ -45,7 +46,9 @@ if(isset($_POST['login'])) {
                         <?php
                         if (!Admin::isAdmin()) {
                             ?>
-                            <li><a href="login.php">Login as admin</a></li>
+                            <div>
+                            <li><a class="navbar-brand" href="login.php">Login as admin</a></li>
+                            </div>
                             <?php
                         }
                         ?>

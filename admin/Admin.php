@@ -1,7 +1,7 @@
 <?php
 
-require_once($_SERVER['DOCUMENT_ROOT'].'/Book/DBConnection.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/Book/Entry.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/app/DBConnection.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/models/Entry.php');
 
 class Admin
 {

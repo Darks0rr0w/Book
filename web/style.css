@@ -1,0 +1,10 @@
+#post{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.container-fluid{
+    background-color : rgb(51, 122, 183);
+}
+.navbar-default .navbar-brand{
+    color: white;
+}

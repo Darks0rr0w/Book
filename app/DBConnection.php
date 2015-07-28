@@ -12,7 +12,7 @@ require_once('config/dbconfig.php');
         private static $dbh;
         public static function connect()
         {
-            return DBConnection::$dbh = new PDO('mysql:host=localhost;dbname=Book', DBConfig::$user, DBConfig::$password);
+            return DBConnection::$dbh = new PDO('mysql:host=localhost;dbname=SnC', DBConfig::$user, DBConfig::$password);
         }
         public static function disconnect()
         {

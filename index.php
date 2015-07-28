@@ -1,16 +1,16 @@
 <?php
-require_once('Entry.php');
-require_once('app.php');
+require_once('models/Entry.php');
+require_once('app/app.php');
 
     if (isset($_GET['logout'])) {
         Admin::logout();
-        header('Location: http://localhost/Book');
+        header('Location: http://localhost/SnC');
     }
     if (isset($_POST['submit'])){
         if(!empty($_POST['content'])) {
             App::saveEntry();
         } else {
-            header("Location: http://localhost/Book");
+            header("Location: http://localhost/SnC");
             }
         }
     if (isset($_POST['update']) && !empty($_POST['review'])) {
@@ -34,7 +34,7 @@ require_once('app.php');
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <title>Suggestions and Complains</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="web/style.css">
 
 </head>
 
@@ -57,7 +57,9 @@ require_once('app.php');
                     <?php
                       if (!Admin::isAdmin()) {
                           ?>
-                          <li><a href="login.php">Login as admin</a></li>
+                          <div>
+                          <li><a class="navbar-brand" href="login.php">Login as admin</a></li>
+                          </div>
                           <?php
                       }
                     ?>
@@ -65,7 +67,9 @@ require_once('app.php');
                     <?php
                         if (Admin::isAdmin()) {
                             ?>
-                            <li><a name="logout" href="index.php?logout=true">Logout</a></li>
+                            <div>
+                            <li><a class ='navbar-brand'  name="logout" href="index.php?logout=true">Logout</a></li>
+                            </div>
                             <?php
                         }
                     ?>
