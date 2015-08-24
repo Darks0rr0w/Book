@@ -43,18 +43,14 @@ class App
 
         try {
             $total = Entry::count();
-
             $limit = 5;
-
             $pages = ceil($total / $limit);
-
             $page = filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT, array(
                 'options' => array(
                     'default'   => 1,
                     'min_range' => 1,
                 ),
             ));
-
             $offset = ($page - 1)  * $limit;
             if($pages >= $page){
                $entries =  Entry::findAll($limit, $offset);

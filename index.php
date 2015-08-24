@@ -47,7 +47,7 @@ require_once('app/app.php');
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
-                <a class="navbar-brand" href="SnC/index.php">Home</a>
+                <a class="navbar-brand" href="index.php">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,7 +58,7 @@ require_once('app/app.php');
                       if (!Admin::isAdmin()) {
                           ?>
                           <div>
-                          <li><a class="navbar-brand" href="SnC/login.php">Login as admin</a></li>
+                          <li><a class="navbar-brand" href="login.php">Login as admin</a></li>
                           </div>
                           <?php
                       }
