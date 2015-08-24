@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3608751-d961-4586-a044-4a4da839ff26" name="Default" comment="">
+    <list default="true" id="a3608751-d961-4586-a044-4a4da839ff26" name="Default" comment="better pagination">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Book.iws" />
@@ -27,7 +27,7 @@
       <file leaf-file-name="Entry.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Entry.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
               <folding>
                 <marker date="1438091804281" expanded="true" signature="1224:1282" placeholder="INSERT INTO ..." />
@@ -339,7 +339,13 @@
       <option name="project" value="LOCAL" />
       <updated>1440387480031</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="better pagination">
+      <created>1440387510765</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1440387510765</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -380,28 +386,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="now date displays near the entry" />
-    <option name="LAST_COMMIT_MESSAGE" value="now date displays near the entry" />
+    <MESSAGE value="better pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="better pagination" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/Entry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
-          <folding>
-            <marker date="1438091804281" expanded="true" signature="1224:1282" placeholder="INSERT INTO ..." />
-            <marker date="1438091804281" expanded="true" signature="1649:1685" placeholder="SELECT * FRO..entry..." />
-            <marker date="1438091804281" expanded="true" signature="1997:2023" placeholder="SELECT COUNT..entry..." />
-            <marker date="1438091804281" expanded="true" signature="2204:2265" placeholder="SELECT * FRO..entry..." />
-            <marker date="1438091804281" expanded="true" signature="2573:2605" placeholder="DELETE FROM ..." />
-            <marker date="1438091804281" expanded="true" signature="2892:2941" placeholder="UPDATE entry..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/DBConnection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -921,6 +913,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.75">
           <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
