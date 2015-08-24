@@ -101,6 +101,11 @@ class App
         DBConnection::disconnect();
     }
 
+    public static function lastPage()
+    {
+        return ceil(Entry::count()/5);
+    }
+
     public static function currentPage()
     {
         $page = filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT, array(

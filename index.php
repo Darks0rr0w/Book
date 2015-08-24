@@ -34,7 +34,7 @@ require_once('app/app.php');
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <title>Suggestions and Complains</title>
-    <link rel="stylesheet" href="web/style.css">
+    <link rel="stylesheet" href="/SnC/web/style.css">
 
 </head>
 
@@ -47,18 +47,18 @@ require_once('app/app.php');
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
-                <a class="navbar-brand" href="index.php">Home</a>
+                <a class="navbar-brand" href="SnC/index.php">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <form action="index.php" method="post">
+            <form action="/SnC/index.php" method="post">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <?php
                       if (!Admin::isAdmin()) {
                           ?>
                           <div>
-                          <li><a class="navbar-brand" href="login.php">Login as admin</a></li>
+                          <li><a class="navbar-brand" href="SnC/login.php">Login as admin</a></li>
                           </div>
                           <?php
                       }
@@ -84,7 +84,7 @@ require_once('app/app.php');
     <hr>
 
 
-    <form action="index.php" method="POST">
+    <form action="/SnC/index.php" method="POST">
         <?php App::displayAll(); ?>
         <div class="form-group">
             <?php
@@ -110,11 +110,24 @@ require_once('app/app.php');
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
-                <li><a href="?page=1">1</a></li>
-                <li><a href="?page=2">2</a></li>
-                <li><a href="?page=3">3</a></li>
-                <li><a href="?page=4">4</a></li>
-                <li><a href="?page=5">5</a></li>
+
+
+                <?php  if ((App::currentPage() - 1 && App::currentPage())  == 1) { ?>
+                    <li><a href="?page=1">first</a></li>
+                <?php } ?>
+
+                <li><a href="?page=<?=App::currentPage()?>"><?=App::currentPage()?></a></li>
+
+
+
+                <?php  if ((App::currentPage()  != App::lastPage())) { ?>
+                    <li><a href="?page=<?= App::currentPage() + 1  ?>"><?= App::currentPage() + 1  ?></a></li>
+                <?php } ?>
+
+
+                <?php  if ( App::currentPage()  != App::lastPage()) { ?>
+                    <li><a href="?page=<?=App::lastPage()?>">last</a></li>
+                <?php } ?>
                 <li>
                     <a href="?page=<?= App::currentPage() + 1 ?>" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
