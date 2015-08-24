@@ -5,7 +5,7 @@
  * Date: 12.07.15
  * Time: 9:33
  */
-require_once('config/dbconfig.php');
+require_once($_SERVER['DOCUMENT_ROOT']. '/SnC/config/dbconfig.php');
 
     class DBConnection extends DBConfig
     {

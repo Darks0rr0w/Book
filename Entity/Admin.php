@@ -1,7 +1,7 @@
 <?php
 
 require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/app/DBConnection.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/models/Entry.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/Entity/Entry.php');
 
 class Admin
 {

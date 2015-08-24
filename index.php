@@ -1,6 +1,6 @@
 <?php
-require_once('models/Entry.php');
-require_once('app/app.php');
+require_once($_SERVER['DOCUMENT_ROOT']. '/SnC/Entity/Entry.php');
+require_once($_SERVER['DOCUMENT_ROOT']. '/SnC/app/app.php');
 
     if (isset($_GET['logout'])) {
         Admin::logout();
@@ -106,13 +106,18 @@ require_once('app/app.php');
         <nav>
             <ul class="pagination">
                 <li>
+                    <?php  if ( App::currentPage()  != 1) { ?>
                     <a href="?page=<?= App::currentPage() - 1 ? : 1 ?>" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                     </a>
+                    <?php } ?>
                 </li>
 
+                <?php  if ((App::currentPage()  != 1)) { ?>
+                    <li><a href="?page=<?= App::currentPage() - 1  ?>"><?= App::currentPage() - 1  ?></a></li>
+                <?php } ?>
 
-                <?php  if ((App::currentPage() - 1 && App::currentPage())  == 1) { ?>
+                <?php  if ((App::currentPage() + 1 && App::currentPage())  != 1) { ?>
                     <li><a href="?page=1">first</a></li>
                 <?php } ?>
 
@@ -125,13 +130,15 @@ require_once('app/app.php');
                 <?php } ?>
 
 
-                <?php  if ( App::currentPage()  != App::lastPage()) { ?>
+                <?php  if ( (App::currentPage() && App::currentPage() + 1)  != App::lastPage() ) { ?>
                     <li><a href="?page=<?=App::lastPage()?>">last</a></li>
                 <?php } ?>
                 <li>
+                    <?php  if ( App::currentPage()  != App::lastPage()) { ?>
                     <a href="?page=<?= App::currentPage() + 1 ?>" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                     </a>
+                    <?php } ?>
                 </li>
             </ul>
         </nav>

@@ -5,7 +5,7 @@
  * Date: 01.07.2015
  * Time: 19:41
  */
-require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/admin/Admin.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/Entity/Admin.php');
 require_once($_SERVER['DOCUMENT_ROOT'] .'/SnC/app/DBConnection.php');
 
 

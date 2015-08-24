@@ -1,6 +1,6 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/admin/Admin.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/models/Entry.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/Entity/Admin.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/SnC/Entity/Entry.php');
 
 if(isset($_POST['login'])) {
     $user = new Admin();
